@@ -1,0 +1,619 @@
+*/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body {
+	background-color: white;
+	position:absolute;
+  width: 100%;
+	display: grid;
+  grid-template-areas: "header header header"
+                     "main main main"
+                     "section section section"
+                     "aside aside aside"
+                     "footer footer footer"; 
+                     
+
+       }
+
+
+
+header {
+	grid-area: header;
+	margin: 10px;
+
+}
+
+main{
+	grid-area: main;
+
+
+}
+
+aside {
+	grid-area: aside;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+section{
+	grid-area: section;
+
+}
+
+footer {
+	grid-area: footer;
+	background-color: lightgrey;
+}
+
+
+h1 {
+	font-size: 30px;
+	
+	font-family: 'Dela Gothic One', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	padding: 25px;
+	box-shadow: 4px 4px 3px lightgrey;
+
+
+	
+}
+
+
+
+  h2 {
+	font-size: 30px;
+	font-family: 'Dela Gothic One', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+	padding: 25px;
+	box-shadow: 4px 4px 3px lightgrey;
+
+
+
+}
+
+header{background-color: white;
+	}
+ 
+
+.logo {
+	width: 70px;
+	height: 70px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 60px;
+}
+
+
+
+
+.navegador {
+	display: inline-flex;
+	padding: 2px;
+	margin: 20px;
+	font-family: 'Dela Gothic One', cursive;
+
+}
+
+nav ul li {
+	list-style: none;
+	margin-left: 25px;
+	padding: 25px 0;
+	float: left;
+	position: relative;
+
+
+}
+
+nav ul li a {
+text-decoration:none ;
+	color: black;
+	outline-width: 5px;
+	list-style: none;
+	
+}
+
+nav ul li a:hover {
+text-decoration:overline ;
+	color: grey;
+	outline-width: 5px;
+	list-style: none;
+	
+}
+
+
+
+.boxmodeling{ 
+display: inline-block; }
+
+.foto1{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+
+}
+
+.texto1 {
+	color: whitesmoke;
+	font-size: 30px;
+}
+
+div p {
+	color: grey;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	border-bottom: 2px solid grey;
+
+}
+
+
+
+
+.copy {
+	color: grey;
+	font-size: 15px;
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	border-bottom: 0;
+
+
+}
+
+.texto1 {
+margin: 5px;
+padding: 5px;
+width: 1050px;
+overflow: auto;
+font-family: 'Dela Gothic One', cursive;
+font-size: 25px;
+color: grey;
+margin-left: 20px;
+margin-bottom: 100px;
+margin-top: 100px;
+border-bottom: 0;
+}
+
+
+
+p b {
+	font-family: 'Dela Gothic One', cursive;
+	color: black;
+	font-size:40px;
+	text-shadow: 25px 10px 8px grey;
+	padding: 50px 20px 20px 20px;
+
+
+
+
+}
+.img-tamano {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 20px;
+
+}
+.img-tamano:hover {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 15px lightgrey;
+
+}
+
+.vermasnuevo{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	font-size: 20px;
+	margin-bottom: 70px;
+	margin-top: 15px;
+	font-family: 'Dela Gothic One', cursive;
+}
+
+div a  {
+	text-decoration:none ;
+	color: black;
+	outline-width: 5px;
+	list-style: none;
+}
+div a:hover {
+	text-decoration:overline ;
+	color: grey;
+	outline-width: 5px;
+	list-style: none;
+}
+
+
+.header__contenedor {
+	display: flex;
+	justify-content: space-around;
+}
+
+.imagenprimera {
+	display: flex;
+	justify-content: center;
+
+}
+  .seccion__primera { 
+  display: flex;
+  justify-content: center;
+   }
+
+   
+
+
+.seccion__intermedia {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.seccion__intermedia--2{
+	margin-left: 50px;
+
+}
+.seccion__segunda {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+.productos {
+	display: flex;
+	position: relative;
+	flex-flow: row wrap;
+	margin-left: 50px;
+  
+}
+
+.productos--div{
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 330px;
+	height: 438px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0,, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+
+.productos--div:hover{
+	transform: translate(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.imgprod {
+	position: relative;
+	height:260px ;
+	width: 260px;
+	margin-left: 50px;
+	margin-right: 50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+}
+
+.imgprod:hover {
+	position: relative;
+	height:260px ;
+	width: 260px;
+	margin-left: 50px;
+	margin-right: 50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+
+}
+
+footer {
+	background-color: whitesmoke;
+	margin-top: 100px;
+}
+
+.footer__seccion {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.logoimg {
+	width: 50px;
+	height: 50px;
+}
+
+
+
+.seccion__primera--contacto{
+	display: flex;
+justify-content: space-around;
+
+
+}
+
+.card{
+	width: 330px;
+	height: 438px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0,, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+  
+}
+
+.card:hover{
+	transform: translate(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+	
+}
+
+
+.cont {
+	border-bottom: none;
+}
+
+h3{
+	font-family:  'Dela Gothic One', cursive;
+	color: grey;
+	text-align: center;
+
+}
+h4{
+	font-family:  'Dela Gothic One', cursive;
+	color: grey;
+
+}
+h5{
+	font-family:  'Dela Gothic One', cursive;
+color: grey;}
+
+
+}
+
+.imagenwpp {
+height: 300px;
+width: 300px;
+font-family:  'Dela Gothic One', cursive;
+	
+}
+
+.imgmail {
+	height: 200px;
+width: 270px;
+font-family:  'Dela Gothic One', cursive;
+
+}
+.imginstagram {
+	height: 200px;
+width: 270px;
+font-family:  'Dela Gothic One', cursive;
+
+}
+
+.imgkids {
+	display: flex;
+	justify-content: space-around;
+}
+.imgkids1{
+	height: 250px;
+	width: 250px;
+}
+
+.kidscard {
+	
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 330px;
+	height: 438px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0,, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+
+.kidscard:hover{
+	transform: translate(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.contenedor__ubicacion {
+	display: inline;
+	text-align: center;
+
+}
+
+.logoubicacion{
+	width: 50px;
+	height: 50px;
+	margin-right: 30px;
+	
+}
+
+.textubicacion{
+	font-size: 20px;
+	font-family:  'Dela Gothic One', cursive;
+	margin-bottom: 70px;
+}
+
+.titulolocales{
+	margin-bottom: 100px;
+	background-color: white;
+}
+
+
+.mainlocales {
+	background-image: url(img/imagenmaps.jpg);
+}
+
+.imglocales{
+	margin-top: 40px;
+}
+
+.parrafopadre{
+	display: flex;
+	justify-content: center;
+}
+
+.parrafo__nosotros{
+	padding-right: 50px;
+	padding-left: 50px;
+	width: 700px;
+	height: 700px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0,, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+
+}
+
+.parrafo__nosotros:hover{
+	transform: translate(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imgnos{
+	height:250px ;
+	width:500px ;
+	margin-bottom: 0;
+}
+
+H3 p {
+	
+padding: 5px;
+overflow: auto;
+font-family: 'Dela Gothic One', cursive;
+font-size: 25px;
+color: grey;
+padding: 45px;
+margin-left: 20px;
+margin-top: 2px;
+text-align: center;
+}
+
+
+
+	
+
+@media screen and (max-width: 768px){
+	.texto1{
+		text-align: left;
+	}
+	.foto1{
+	width: 90%;
+	}
+
+	nav{
+		display: flex;
+		justify-content: center;
+	}
+
+
+}
+
+@media screen and (max-width:320px){
+	
+	
+	nav{
+		display: flex;
+		justify-content: center;
+	}
+	.productos--div{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.kidscard{
+		display: flex;
+		justify-content: center;
+	}
+
+	.productos--div{
+		width: 100%;
+	}
+}
+
+
+
+
+
+

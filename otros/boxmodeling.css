@@ -1,0 +1,24 @@
+.boxmodeling {
+	background-color: darkred;
+	width: 400px;
+	margin-left:20px ;
+margin-top: 30px;
+margin-right: 20px;
+margin-bottom: 30px;
+margin: 50px auto;
+padding: 20px 25px;
+border: 5px solid black;
+border-radius: 50px ;
+overflow: auto;
+
+}
+
+.p1 {
+	font-size: 21px;
+
+}
+
+.boxmodeling{ display: inline-block;
+ }
+
+

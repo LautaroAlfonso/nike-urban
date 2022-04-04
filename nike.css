@@ -623,6 +623,21 @@ text-align: center;
 
 }
 
+
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+	.kidscard{
+		display: flex;
+		justify-content: center;
+	}
+
+	.productos--div{
+		width: auto;
+	}
+
+	
+}
+
 @media screen and (max-width:320px){
 	
 	
@@ -636,20 +651,16 @@ text-align: center;
 	
 }
 
-@media screen and (max-width: 768px){
-	.kidscard{
-		display: flex;
-		justify-content: center;
-	}
+@media screen and (max-width:480px){
 
-	.productos--div{
-		width: auto;
-	}
+	footer{
+		display: grid;
+		grid-template-areas: "footer"
+		                     "footer";
 
+	}
 	
 }
-
-
 
 
 

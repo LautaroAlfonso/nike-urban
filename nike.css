@@ -637,6 +637,13 @@ text-align: center;
 		width: auto;
 	}
 
+	.kidscard{
+		display: grid;
+		grid-template-areas: "main"
+		                      "main"
+							  "main";
+	}
+
 	
 }
 
@@ -691,3 +698,5 @@ text-align: center;
   
 	}
   }
+
+  

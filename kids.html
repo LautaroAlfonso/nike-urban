@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	
@@ -38,6 +39,9 @@
 				</li>
 				
 			</ul>
+			<div class="hide">
+				<i class="fa fa-bars" aria-hidden="true"></i> Menu 
+			</div>
 		</nav>
 
 		</div>
@@ -97,6 +101,12 @@
 
 </div>
 </footer>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $(".hide").on('click', function() {
+	$("nav ul").toggle('slow');
+  })
+</script>
 
 </body>
 </html>

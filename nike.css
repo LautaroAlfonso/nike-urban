@@ -218,6 +218,7 @@ display: inline-block; }
 .texto1 {
 	color: whitesmoke;
 	font-size: 30px;
+	width: auto;
 }
 
 div p {
@@ -249,7 +250,7 @@ div p {
 .texto1 {
 margin: 5px;
 padding: 5px;
-width: 1050px;
+width: auto;
 overflow: auto;
 font-family: 'Dela Gothic One', cursive;
 font-size: 25px;
@@ -297,6 +298,13 @@ p b {
 	margin-top: 15px;
 	font-family: 'Dela Gothic One', cursive;
 }
+
+.imgaside {
+	display: flex;
+	width: auto;
+}
+
+
 
 div a  {
 	text-decoration:none ;
@@ -466,7 +474,9 @@ h5{
 color: grey;}
 
 
-
+.card {
+	font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
 
 .imagenwpp {
 height: 300px;
@@ -490,8 +500,11 @@ font-family:  'Dela Gothic One', cursive;
 
 .imgkids {
 	display: grid;
-	grid-template-areas: "main main main";
-}
+	grid-template-areas: "main main main"
+	                      "main main main"
+						  "main main main";
+ 
+}                         
 
 @media screen and (max-width:500px){
 	.imgkids{
@@ -499,8 +512,9 @@ font-family:  'Dela Gothic One', cursive;
 		grid-template-areas: "main"
 		                      "main"
 							  "main";
+							  
 	}
-	
+	;
 }
 .imgkids1{
 	height: 250px;
@@ -511,7 +525,7 @@ font-family:  'Dela Gothic One', cursive;
 	
 	padding-right: 30px;
 	padding-left: 30px;
-	width: 330px;
+	width: auto;
 	height: 438px;
 	border-radius: 8px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -519,7 +533,9 @@ font-family:  'Dela Gothic One', cursive;
 	margin: 20px;
 	text-align: center;
 	transition: all 0.25s;
+	
 }
+
 
 .kidscard:hover{
 	transform: translate(-15px);
@@ -569,21 +585,15 @@ font-family:  'Dela Gothic One', cursive;
 .parrafo__nosotros{
 	padding-right: 50px;
 	padding-left: 50px;
-	width: 700px;
-	height: 700px;
+	width:100%;
 	border-radius: 8px;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
 	margin: 20px;
 	text-align: center;
-	transition: all 0.25s;
+	
 
 }
 
-.parrafo__nosotros:hover{
-	transform: translate(-15px);
-	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
+
 
 .imgnos{
 	height:250px ;
@@ -609,16 +619,26 @@ text-align: center;
 	
 
 @media screen and (max-width: 768px){
-	.texto1{
-		text-align: left;
-	}
-
+	
+.texto1 {
+	width: 100%;
+}
 
 	nav{
 		display: flex;
 		justify-content: center;
 	}
 
+ .kidscard{
+	 display: flex;
+	 justify-content: center;
+ }
+
+ aside {
+	display: grid;
+	grid-template-areas: "aside"
+						  "aside";
+}
 
 
 }
@@ -641,7 +661,12 @@ text-align: center;
 		                      "main"
 							  "main";
 	}
-
+    aside {
+		display: grid;
+		grid-template-areas: "aside"
+		                      "aside";
+	}
+   
 
 }
 
@@ -696,4 +721,7 @@ text-align: center;
 	}
   }
 
-  
+  .row .col {
+	  display: flex;
+	  justify-content: space-around;
+  }

@@ -478,6 +478,7 @@ color: grey;}
 	font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
+
 .imagenwpp {
 height: 300px;
 width: 300px;
@@ -586,10 +587,10 @@ font-family:  'Dela Gothic One', cursive;
 	padding-right: 50px;
 	padding-left: 50px;
 	width:100%;
-	border-radius: 8px;
+	
 	margin: 20px;
 	text-align: center;
-	
+
 
 }
 

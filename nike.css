@@ -642,12 +642,11 @@ text-align: center;
 							  "main";
 	}
 
-	
+
 }
 
 @media screen and (max-width:320px){
-	
-	
+
 	nav{
 		display: flex;
 		justify-content: center;

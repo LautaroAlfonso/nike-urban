@@ -90,7 +90,7 @@ body {
 
 header {
 	grid-area: header;
-	margin: 10px;
+	margin-bottom: 10px;
 
 }
 
@@ -230,17 +230,14 @@ div p {
 }
 
 .texto1 {
-margin: 5px;
-padding: 5px;
+
 width: auto;
 overflow: auto;
 font-family: 'Dela Gothic One', cursive;
 font-size: 25px;
 color: grey;
-margin-left: 20px;
-margin-bottom: 100px;
-margin-top: 100px;
-border-bottom: 0;
+border-bottom: none;
+padding-bottom: 10px;
 }
 
 
@@ -438,6 +435,9 @@ justify-content: space-around;
 	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 
 	
+}
+.conteiner{
+	width: 100%;
 }
 
 

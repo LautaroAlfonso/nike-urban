@@ -155,6 +155,20 @@ header{background-color: white;
 	}
  
 
+.navbar-collapse{
+	justify-content: end;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	font-size: 1,3rem;
+	font-family: 'Dela Gothic One', cursive;
+	color: black;
+	margin: 0 20px;
+}
+
+
+
+
 .logo {
 	width: 70px;
 	height: 70px;
@@ -166,39 +180,7 @@ header{background-color: white;
 
 
 
-.navegador {
-	display: inline-flex;
-	padding: 2px;
-	margin: 20px;
-	font-family: 'Dela Gothic One', cursive;
 
-}
-
-nav ul li {
-	list-style: none;
-	margin-left: 25px;
-	padding: 25px 0;
-	float: left;
-	position: relative;
-
-
-}
-
-nav ul li a {
-text-decoration:none ;
-	color: black;
-	outline-width: 5px;
-	list-style: none;
-	
-}
-
-nav ul li a:hover {
-text-decoration:overline ;
-	color: grey;
-	outline-width: 5px;
-	list-style: none;
-	
-}
 
 
 
@@ -410,19 +392,24 @@ div a:hover {
 }
 
 footer {
-	background-color: whitesmoke;
-	margin-top: 100px;
+	background-color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
 }
 
-.footer__seccion {
-	display: flex;
+footer ul{
+
+	display:flex;
 	justify-content: space-around;
-
+	
 }
+
+
 
 .logoimg {
-	width: 150px;
-	height: 150px;
+	width: 50px;
+	height: 50px;
 }
 
 
@@ -625,10 +612,7 @@ text-align: center;
 	width: 100%;
 }
 
-	nav{
-		display: flex;
-		justify-content: center;
-	}
+
 
  .kidscard{
 	 display: flex;
@@ -673,10 +657,7 @@ text-align: center;
 
 @media screen and (max-width:320px){
 
-	nav{
-		display: flex;
-		justify-content: center;
-	}
+	
 	.productos--div{
 		width: auto;
 	}
@@ -695,15 +676,7 @@ text-align: center;
 }
 
 
-.hide {
-	font-size: 32px;
-	padding: 16px;
-	background-color: white;
-	color: black;
-	cursor: pointer;
-	display: none;
 
-}
 
 @media (max-width: 768px) {
 	ul li {
@@ -712,14 +685,9 @@ text-align: center;
 	  text-align: left;
 	}
   
-	.hide {
-	  display: block;
-	}
+	
   
-	nav ul {
-	display: none;
-  
-	}
+
   }
 
   .row .col {

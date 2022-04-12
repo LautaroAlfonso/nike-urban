@@ -96,7 +96,7 @@ header {
 
 main{
 	grid-area: main;
-
+width: 100%;
 
 }
 
@@ -278,9 +278,14 @@ p b {
 	font-family: 'Dela Gothic One', cursive;
 }
 
+.vermas {
+	display: flex;
+	justify-content: center;
+}
+
 .imgaside {
 	display: flex;
-	width: auto;
+	width: 100%;
 }
 
 
@@ -596,9 +601,6 @@ overflow: auto;
 font-family: 'Dela Gothic One', cursive;
 font-size: 25px;
 color: grey;
-padding: 45px;
-margin-left: 20px;
-margin-top: 2px;
 text-align: center;
 }
 
@@ -668,8 +670,7 @@ text-align: center;
 
 	footer{
 		display: grid;
-		grid-template-areas: "footer"
-		                     "footer";
+		grid-template-areas: "footer";
 
 	}
 	

@@ -192,16 +192,22 @@ display: inline-block; }
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-
-
-
 }
+
+
 
 .texto1 {
 	color: whitesmoke;
-	font-size: 30px;
-	width: auto;
+	font-size: 4rem;
 }
+
+@media (max-width:425px){
+	html{
+		font-size: 100%;
+	}
+}
+
+
 
 div p {
 	color: grey;
@@ -290,6 +296,7 @@ p b {
 
 
 
+
 div a  {
 	text-decoration:none ;
 	color: black;
@@ -303,24 +310,15 @@ div a:hover {
 	list-style: none;
 }
 
-
 .header__contenedor {
 	display: flex;
 	justify-content: space-around;
 }
 
-.imagenprimera {
-	display: flex;
-	justify-content: center;
-
-}
   .seccion__primera { 
   display: flex;
   justify-content: center;
    }
-
-   
-
 
 .seccion__intermedia {
 	display: flex;
@@ -348,6 +346,22 @@ div a:hover {
   
 }
 
+#n-nuevo::before{
+	content: 'Nuevo';
+	background-color: white;
+	color:gray;
+	position: absolute;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#rebaja::before{
+	content: '30% Off';
+	background-color: white;
+	color: gray;
+	position: absolute;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .productos--div{
 	width: 360px;
 	height: 438px;
@@ -364,12 +378,6 @@ div a:hover {
 	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
 .imgprod {
 	position: relative;
 	height:260px ;
@@ -378,7 +386,6 @@ div a:hover {
 	margin-right: 50px;
    margin-top: 10px;
    margin-bottom: 10px;
-
 }
 
 .imgprod:hover {
@@ -389,8 +396,6 @@ div a:hover {
 	margin-right: 50px;
    margin-top: 10px;
    margin-bottom: 10px;
-
-
 }
 
 footer {
@@ -407,20 +412,14 @@ footer ul{
 	
 }
 
-
-
 .logoimg {
 	width: 50px;
 	height: 50px;
 }
 
-
-
 .seccion__primera--contacto{
 	display: flex;
 justify-content: space-around;
-
-
 }
 
 .card{

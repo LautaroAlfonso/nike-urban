@@ -1,0 +1,672 @@
+*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "section" "aside" "footer";
+}
+
+.productosgrilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "main main main" "main main main" "main main main";
+}
+
+@media screen and (max-width: 780px) {
+  .productosgrilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: " main" "main" "main" "main" "main" "main" "main" "main" "main";
+  }
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  margin-bottom: 10px;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  width: 100%;
+}
+
+aside {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: aside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: section;
+}
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: lightgrey;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Dela Gothic One', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  padding: 25px;
+  -webkit-box-shadow: 4px 4px 3px lightgrey;
+          box-shadow: 4px 4px 3px lightgrey;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Dela Gothic One', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+  padding: 25px;
+  -webkit-box-shadow: 4px 4px 3px lightgrey;
+          box-shadow: 4px 4px 3px lightgrey;
+}
+
+header {
+  background-color: white;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1,3rem;
+  font-family: 'Dela Gothic One', cursive;
+  color: black;
+  margin: 0 20px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 60px;
+}
+
+.boxmodeling {
+  display: inline-block;
+}
+
+.foto1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.texto1 {
+  color: whitesmoke;
+  font-size: 4rem;
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+div p {
+  color: grey;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  border-bottom: 2px solid grey;
+}
+
+.copy {
+  color: grey;
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  border-bottom: 0;
+}
+
+.texto1 {
+  width: auto;
+  overflow: auto;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 25px;
+  color: grey;
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+p b {
+  font-family: 'Dela Gothic One', cursive;
+  color: black;
+  font-size: 40px;
+  text-shadow: 25px 10px 8px grey;
+  padding: 50px 20px 20px 20px;
+}
+
+.img-tamano {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.img-tamano:hover {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 15px lightgrey;
+          box-shadow: 0px 0px 15px lightgrey;
+}
+
+.vermasnuevo {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 70px;
+  margin-top: 15px;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.vermas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgaside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+}
+
+div a {
+  text-decoration: none;
+  color: black;
+  outline-width: 5px;
+  list-style: none;
+}
+
+div a:hover {
+  text-decoration: overline;
+  color: grey;
+  outline-width: 5px;
+  list-style: none;
+}
+
+.header__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.seccion__primera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.seccion__intermedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.seccion__intermedia--2 {
+  margin-left: 50px;
+}
+
+.seccion__segunda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#n-nuevo::before {
+  content: 'Nuevo';
+  background-color: white;
+  color: gray;
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#rebaja::before {
+  content: '30% Off';
+  background-color: white;
+  color: gray;
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productos--div {
+  width: 360px;
+  height: 438px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.productos--div:hover {
+  -webkit-transform: translate(-15px);
+          transform: translate(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imgprod {
+  position: relative;
+  height: 260px;
+  width: 260px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imgprod:hover {
+  position: relative;
+  height: 260px;
+  width: 260px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.logoimg {
+  width: 50px;
+  height: 50px;
+}
+
+.seccion__primera--contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  width: 330px;
+  height: 438px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  -webkit-transform: translate(-15px);
+          transform: translate(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.conteiner {
+  width: 100%;
+}
+
+.cont {
+  border-bottom: none;
+}
+
+h3 {
+  font-family: 'Dela Gothic One', cursive;
+  color: grey;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Dela Gothic One', cursive;
+  color: grey;
+}
+
+h5 {
+  font-family: 'Dela Gothic One', cursive;
+  color: grey;
+}
+
+.card {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagenwpp {
+  height: 300px;
+  width: 300px;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.imgmail {
+  height: 200px;
+  width: 270px;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.imginstagram {
+  height: 200px;
+  width: 270px;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.imgkids {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "main main main" "main main main" "main main main";
+}
+
+@media screen and (max-width: 500px) {
+  .imgkids {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "main" "main" "main";
+  }
+}
+
+.imgkids1 {
+  height: 250px;
+  width: 250px;
+}
+
+.kidscard {
+  padding-right: 30px;
+  padding-left: 30px;
+  width: auto;
+  height: 438px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.kidscard:hover {
+  -webkit-transform: translate(-15px);
+          transform: translate(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor__ubicacion {
+  display: inline;
+  text-align: center;
+}
+
+.logoubicacion {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.textubicacion {
+  font-size: 20px;
+  font-family: 'Dela Gothic One', cursive;
+  margin-bottom: 70px;
+}
+
+.titulolocales {
+  margin-bottom: 100px;
+  background-color: white;
+}
+
+.mainlocales {
+  background-image: url(img/imagenmaps.jpg);
+}
+
+.imglocales {
+  margin-top: 40px;
+}
+
+.parrafopadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parrafo__nosotros {
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+.imgnos {
+  height: 250px;
+  width: 500px;
+  margin-bottom: 0;
+}
+
+H3 p {
+  padding: 5px;
+  overflow: auto;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 25px;
+  color: grey;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .texto1 {
+    width: 100%;
+  }
+  .kidscard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "aside" "aside";
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .kidscard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .productos--div {
+    width: auto;
+  }
+  .kidscard {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "main" "main" "main";
+  }
+  aside {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "aside" "aside";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .productos--div {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "footer";
+  }
+}
+
+@media (max-width: 768px) {
+  ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+}
+
+.row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=nike.css.map */

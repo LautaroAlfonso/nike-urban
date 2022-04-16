@@ -564,13 +564,13 @@ text-align: center;
   header{
       background-color: white;
 
-    .logo {
-        width: 70px;
-        height: 70px;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 60px;
-    }
+    // .logo {
+    //     width: 70px;
+    //     height: 70px;
+    //     margin-top: 0px;
+    //     margin-left: 0px;
+    //     margin-bottom: 60px;
+    // }
     .logoimg {
         width: 50px;
         height: 50px;
@@ -625,7 +625,7 @@ text-align: center;
 aside{
     display: flex;
 	justify-content: space-around;
-    
+
     .imgaside {
         display: flex;
         width: 350px;

@@ -226,16 +226,16 @@ div a:hover {
 
 #n-nuevo::before{
 	content: 'Nuevo';
-	background-color: white;
-	color:gray;
+	background-color: $colorPrincipal;
+	color: $colorTerciario;
 	position: absolute;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #rebaja::before{
 	content: '30% Off';
-	background-color: white;
-	color: gray;
+	background-color: $colorPrincipal;
+	color: $colorTerciario;
 	position: absolute;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -315,18 +315,18 @@ justify-content: space-around;
 
 h3{
 	font-family:  'Dela Gothic One', cursive;
-	color: grey;
+	color: $colorTerciario;
 	text-align: center;
 
 }
 h4{
 	font-family:  'Dela Gothic One', cursive;
-	color: grey;
+	color: $colorTerciario;
 
 }
 h5{
 	font-family:  'Dela Gothic One', cursive;
-color: grey;}
+color: $colorTerciario;}
 
 
 .card {
@@ -421,7 +421,7 @@ font-family:  'Dela Gothic One', cursive;
 
 .titulolocales{
 	margin-bottom: 100px;
-	background-color: white;
+	background-color: $colorPrincipal
 }
 
 
@@ -442,11 +442,8 @@ font-family:  'Dela Gothic One', cursive;
 	padding-right: 50px;
 	padding-left: 50px;
 	width:100%;
-	
 	margin: 20px;
 	text-align: center;
-
-
 }
 
 
@@ -463,7 +460,7 @@ padding: 5px;
 overflow: auto;
 font-family: 'Dela Gothic One', cursive;
 font-size: 25px;
-color: grey;
+color: $colorTerciario;
 text-align: center;
 }
 

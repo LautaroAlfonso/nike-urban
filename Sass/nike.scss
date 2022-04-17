@@ -127,7 +127,7 @@ h1 {
 .boxmodeling{ 
 display: inline-block; }
 
-@media (max-width:425px){
+@media (max-width: $mobile){
 	html{
 		font-size: 100%;
 	}
@@ -214,14 +214,10 @@ div a:hover {
 	justify-content: space-around;
 }
 
-
-
 .productos {
 	display: flex;
 	position: relative;
 	justify-content: space-around;
-	
-  
 }
 
 #n-nuevo::before{
@@ -530,13 +526,8 @@ text-align: center;
 	footer{
 		display: grid;
 		grid-template-areas: "footer";
-
-	}
-	
+	}	
 }
-
-
-
 
 @media (max-width: $tablet) {
 	ul li {
@@ -550,8 +541,6 @@ text-align: center;
 	  display: flex;
 	  justify-content: space-around;
   }
-
-  
 
   header{
       background-color: $colorPrincipal;

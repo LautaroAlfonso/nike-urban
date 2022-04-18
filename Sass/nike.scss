@@ -179,12 +179,6 @@ div a:hover {
 	justify-content: space-around;
 }
 
-.productos {
-	display: flex;
-	position: relative;
-	justify-content: space-around;
-}
-
 #n-nuevo::before{
 	content: 'Nuevo';
 	background-color: $colorPrincipal;
@@ -220,25 +214,6 @@ div a:hover {
 	display: flex;
 justify-content: space-around;
 }
-
-.card{
-	width: 330px;
-	height: 438px;
-	border-radius: 8px;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	margin: 20px;
-	text-align: center;
-	transition: all 0.25s;
-  
-}
-
-.card:hover{
-	transform: translate(-15px);
-	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-
-	
-}
 .conteiner{
 	width: 100%;
 }
@@ -257,30 +232,6 @@ h5{
 	font-family:  'Dela Gothic One', cursive;
 color: $colorTerciario;}
 
-
-.card {
-	font-family:Verdana, Geneva, Tahoma, sans-serif ;
-}
-
-
-.imagenwpp {
-height: 300px;
-width: 300px;
-font-family:  'Dela Gothic One', cursive;
-	
-}
-
-.imgmail {
-	height: 200px;
-width: 270px;
-font-family:  'Dela Gothic One', cursive;
-
-}
-.imginstagram {
-	height: 200px;
-width: 270px;
-font-family:  'Dela Gothic One', cursive;
-}
 
 /*Sector de media queries*/
 
@@ -383,6 +334,8 @@ font-family:  'Dela Gothic One', cursive;
 	  justify-content: space-around;
   }
 
+  /* Optimizando con Sass*/
+
   header{
       background-color: $colorPrincipal;
 
@@ -437,6 +390,12 @@ font-family:  'Dela Gothic One', cursive;
 
     }
 	/* Sector Productos*/
+
+	.productos {
+		display: flex;
+		position: relative;
+		justify-content: space-around;
+	}
 	.imgprod {
 		position: relative;
 		height:260px ;
@@ -499,7 +458,6 @@ font-family:  'Dela Gothic One', cursive;
 		margin-bottom: 100px;
 		background-color: $colorPrincipal
 	}
-	
 	
 	.mainlocales {
 		background-image: url(img/imagenmaps.jpg);
@@ -564,20 +522,55 @@ section{
 			transition: all 0.25s;
 			
 		}
-		
-		
+
 		.kidscard:hover{
 			transform: translate(-15px);
 			box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-		
 		}
 		.imgkids {
 			display: grid;
 			grid-template-areas: "main main main"
 								  "main main main"
 								  "main main main";
-		 
 		}  
+
+		/* Sector Contactos */
+		.card {
+			font-family:Verdana, Geneva, Tahoma, sans-serif ;
+		}
+		.card{
+			width: 330px;
+			height: 438px;
+			border-radius: 8px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+			margin: 20px;
+			text-align: center;
+			transition: all 0.25s;
+		  
+		}
+		.card:hover{
+			transform: translate(-15px);
+			box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+		}
+		.imagenwpp {
+		height: 300px;
+		width: 300px;
+		font-family:  'Dela Gothic One', cursive;
+			
+		}
+		
+		.imgmail {
+			height: 200px;
+		width: 270px;
+		font-family:  'Dela Gothic One', cursive;
+		
+		}
+		.imginstagram {
+			height: 200px;
+		width: 270px;
+		font-family:  'Dela Gothic One', cursive;
+		}
 }
 
 aside{

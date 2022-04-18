@@ -72,22 +72,6 @@ body {
 						  "main main main";
 }
 
-@media screen and ( max-width: $tablet) {
-	.productosgrilla{
-		display: grid;
-		grid-template-areas:" main"
-		                     "main"
-							 "main"
-							 "main"
-							 "main"
-							 "main"
-							 "main"
-							 "main"
-							 "main" ;
-	}
-}
-
-
 header {
 	grid-area: header;
 	margin-bottom: 10px;
@@ -111,27 +95,8 @@ footer {
 	grid-area: footer;
 }
 
-h1 {
-	font-size: 30px;
-	
-	font-family: 'Dela Gothic One', cursive;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
-	padding: 25px;
-	box-shadow: 4px 4px 3px $colorSecundario
-	
-}
-
 .boxmodeling{ 
 display: inline-block; }
-
-@media (max-width: $mobile){
-	html{
-		font-size: 100%;
-	}
-}
 
 div p {
 	color: grey;
@@ -251,32 +216,6 @@ div a:hover {
 	transform: translate(-15px);
 	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-
-.imgprod {
-	position: relative;
-	height:260px ;
-	width: 260px;
-	margin-left: 50px;
-	margin-right: 50px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-
-.imgprod:hover {
-	position: relative;
-	height:260px ;
-	width: 260px;
-	margin-left: 50px;
-	margin-right: 50px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-
-.logoimg {
-	width: 50px;
-	height: 50px;
-}
-
 .seccion__primera--contacto{
 	display: flex;
 justify-content: space-around;
@@ -309,12 +248,6 @@ justify-content: space-around;
 	border-bottom: none;
 }
 
-h3{
-	font-family:  'Dela Gothic One', cursive;
-	color: $colorTerciario;
-	text-align: center;
-
-}
 h4{
 	font-family:  'Dela Gothic One', cursive;
 	color: $colorTerciario;
@@ -347,16 +280,24 @@ font-family:  'Dela Gothic One', cursive;
 	height: 200px;
 width: 270px;
 font-family:  'Dela Gothic One', cursive;
-
 }
 
-.imgkids {
-	display: grid;
-	grid-template-areas: "main main main"
-	                      "main main main"
-						  "main main main";
- 
-}                         
+/*Sector de media queries*/
+
+@media screen and ( max-width: $tablet) {
+	.productosgrilla{
+		display: grid;
+		grid-template-areas:" main"
+		                     "main"
+							 "main"
+							 "main"
+							 "main"
+							 "main"
+							 "main"
+							 "main"
+							 "main" ;
+	}
+}
 
 @media screen and (max-width: $mobile){
 	.imgkids{
@@ -366,127 +307,29 @@ font-family:  'Dela Gothic One', cursive;
 							  "main";
 							  
 	}
-	;
 }
-.imgkids1{
-	height: 250px;
-	width: 250px;
+@media (max-width: $mobile){
+	html{
+		font-size: 100%;
+	}
 }
-
-.kidscard {
-	
-	padding-right: 30px;
-	padding-left: 30px;
-	width: auto;
-	height: 438px;
-	border-radius: 8px;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	margin: 20px;
-	text-align: center;
-	transition: all 0.25s;
-	
-}
-
-
-.kidscard:hover{
-	transform: translate(-15px);
-	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-
-}
-
-
-.contenedor__ubicacion {
-	display: inline;
-	text-align: center;
-
-}
-
-.logoubicacion{
-	width: 50px;
-	height: 50px;
-	margin-right: 30px;
-	
-}
-
-.textubicacion{
-	font-size: 20px;
-	font-family:  'Dela Gothic One', cursive;
-	margin-bottom: 70px;
-}
-
-.titulolocales{
-	margin-bottom: 100px;
-	background-color: $colorPrincipal
-}
-
-
-.mainlocales {
-	background-image: url(img/imagenmaps.jpg);
-}
-
-.imglocales{
-	margin-top: 40px;
-}
-
-.parrafopadre{
-	display: flex;
-	justify-content: center;
-}
-
-.parrafo__nosotros{
-	padding-right: 50px;
-	padding-left: 50px;
-	width:100%;
-	margin: 20px;
-	text-align: center;
-}
-
-
-
-.imgnos{
-	height:250px ;
-	width:500px ;
-	margin-bottom: 0;
-}
-
-H3 p {
-	
-padding: 5px;
-overflow: auto;
-font-family: 'Dela Gothic One', cursive;
-font-size: 25px;
-color: $colorTerciario;
-text-align: center;
-}
-
-
-
-	
-
 @media screen and (max-width: $tablet){
 	
-.texto1 {
+       .texto1 {
 	width: 100%;
 }
 
-
-
- .kidscard{
+       .kidscard{
 	 display: flex;
 	 justify-content: center;
  }
 
- aside {
+       aside {
 	display: grid;
 	grid-template-areas: "aside"
 						  "aside";
 }
-
-
 }
-
-
 
 @media screen and (min-width: $mobile) and (max-width: $tablet){
 	.kidscard{
@@ -509,8 +352,6 @@ text-align: center;
 		grid-template-areas: "aside"
 		                      "aside";
 	}
-   
-
 }
 
 @media screen and (max-width: $mobile){
@@ -545,13 +386,6 @@ text-align: center;
   header{
       background-color: $colorPrincipal;
 
-    // .logo {
-    //     width: 70px;
-    //     height: 70px;
-    //     margin-top: 0px;
-    //     margin-left: 0px;
-    //     margin-bottom: 60px;
-    // }
     .logoimg {
         width: 50px;
         height: 50px;
@@ -575,6 +409,20 @@ text-align: center;
   }
 
   main{
+
+	/* Pagina index*/
+	h1 {
+		font-size: 30px;
+		
+		font-family: 'Dela Gothic One', cursive;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+		padding: 25px;
+		box-shadow: 4px 4px 3px $colorSecundario
+		
+	}
     h2 {
 		font{
 			size: 1.5rem;
@@ -588,6 +436,28 @@ text-align: center;
         box-shadow: 4px 4px 3px $colorShadow;
 
     }
+	/* Sector Productos*/
+	.imgprod {
+		position: relative;
+		height:260px ;
+		width: 260px;
+		margin-left: 50px;
+		margin-right: 50px;
+	   margin-top: 10px;
+	   margin-bottom: 10px;
+	}
+	
+	.imgprod:hover {
+		position: relative;
+		height:260px ;
+		width: 260px;
+		margin-left: 50px;
+		margin-right: 50px;
+	   margin-top: 10px;
+	   margin-bottom: 10px;
+	}
+
+	/* Ver mas index*/
     .vermasnuevo{
         list-style: none;
         display: flex;
@@ -603,8 +473,112 @@ text-align: center;
         display: flex;
         justify-content: center;
     }
+	
+	/*Sector ubicacion*/
+
+	.contenedor__ubicacion {
+		display: inline;
+		text-align: center;
+	
+	}
+	
+	.logoubicacion{
+		width: 50px;
+		height: 50px;
+		margin-right: 30px;
+		
+	}
+	
+	.textubicacion{
+		font-size: 20px;
+		font-family:  'Dela Gothic One', cursive;
+		margin-bottom: 70px;
+	}
+	
+	.titulolocales{
+		margin-bottom: 100px;
+		background-color: $colorPrincipal
+	}
+	
+	
+	.mainlocales {
+		background-image: url(img/imagenmaps.jpg);
+	}
+	
+	.imglocales{
+		margin-top: 40px;
+	}
     
   }
+
+section{
+
+	/*Sector Nosotros*/
+
+	H3 p {	
+		padding: 5px;
+		overflow: auto;
+		font-family: 'Dela Gothic One', cursive;
+		font-size: 25px;
+		color: $colorTerciario;
+		text-align: center;
+		}
+		h3{
+			font-family:  'Dela Gothic One', cursive;
+			color: $colorTerciario;
+			text-align: center;
+		
+		}
+
+		.parrafopadre{
+			display: flex;
+			justify-content: center;
+		}
+		
+		.parrafo__nosotros{
+			padding-right: 50px;
+			padding-left: 50px;
+			width:100%;
+			margin: 20px;
+			text-align: center;
+		}
+    
+		/*Sector Kids*/
+
+		.imgkids1{
+			height: 250px;
+			width: 250px;
+		}
+		
+		.kidscard {
+			
+			padding-right: 30px;
+			padding-left: 30px;
+			width: auto;
+			height: 438px;
+			border-radius: 8px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+			margin: 20px;
+			text-align: center;
+			transition: all 0.25s;
+			
+		}
+		
+		
+		.kidscard:hover{
+			transform: translate(-15px);
+			box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+		
+		}
+		.imgkids {
+			display: grid;
+			grid-template-areas: "main main main"
+								  "main main main"
+								  "main main main";
+		 
+		}  
+}
 
 aside{
     display: flex;

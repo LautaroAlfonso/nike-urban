@@ -60,17 +60,7 @@ body {
                      "aside"
                      "footer"; 
                      
-
        }
-
-
-.productosgrilla { 
-	display: grid;
-	grid-template-areas: "main main main"
-	                      "main main main"
-						  "main main main";
-}
-
 header {
 	grid-area: header;
 	margin-bottom: 10px;
@@ -80,7 +70,6 @@ header {
 main{
 	grid-area: main;
 width: 100%;
-
 }
 
 aside {
@@ -97,27 +86,6 @@ footer {
 .boxmodeling{ 
 display: inline-block; }
 
-div p {
-	color: grey;
-	font-size: 20px;
-	font-family: 'Roboto Mono', monospace;
-	text-align: center;
-	margin-bottom: 60px;
-	margin-top: 20px;
-	border-bottom: 2px solid grey;
-
-}
-
-.copy {
-	color: grey;
-	font-size: 15px;
-	font-family: 'Roboto Mono', monospace;
-	text-align: center;
-	margin-bottom: 60px;
-	margin-top: 20px;
-	border-bottom: 0;
-}
-
 p b {
 	font-family: 'Dela Gothic One', cursive;
 	color: black;
@@ -126,111 +94,12 @@ p b {
 	padding: 50px 20px 20px 20px;
 
 }
-.img-tamano {
-	width: 350px;
-	height: 350px;
-	margin-bottom: 20px;
-}
-.img-tamano:hover {
-	width: 250px;
-	height: 250px;
-	margin-bottom: 20px;
-	box-shadow: 0px 0px 15px lightgrey;
-
-}
-
-div a  {
-	text-decoration:none ;
-	color: black;
-	outline-width: 5px;
-	list-style: none;
-}
-div a:hover {
-	text-decoration:overline ;
-	color: grey;
-	outline-width: 5px;
-	list-style: none;
-}
-
-.header__contenedor {
-	display: flex;
-	justify-content: space-around;
-}
-
-  .seccion__primera { 
-  display: flex;
-  justify-content: center;
-   }
-
-.seccion__intermedia {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
-	margin-top: 5px;
-}
-
-.seccion__intermedia--2{
-	margin-left: 50px;
-
-}
-.seccion__segunda {
-	display: flex;
-	justify-content: space-around;
-}
-
-#n-nuevo::before{
-	content: 'Nuevo';
-	background-color: $colorPrincipal;
-	color: $colorTerciario;
-	position: absolute;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#rebaja::before{
-	content: '30% Off';
-	background-color: $colorPrincipal;
-	color: $colorTerciario;
-	position: absolute;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.productos--div{
-	width: 360px;
-	height: 438px;
-	border-radius: 8px;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	margin: 20px;
-	text-align: center;
-	transition: all 0.25s;
-}
-
-.productos--div:hover{
-	transform: translate(-15px);
-	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.seccion__primera--contacto{
-	display: flex;
-justify-content: space-around;
-}
 .conteiner{
 	width: 100%;
 }
-
-
 .cont {
 	border-bottom: none;
 }
-
-h4{
-	font-family:  'Dela Gothic One', cursive;
-	color: $colorTerciario;
-
-}
-h5{
-	font-family:  'Dela Gothic One', cursive;
-color: $colorTerciario;}
-
 
 /*Sector de media queries*/
 
@@ -338,6 +207,10 @@ color: $colorTerciario;}
   header{
       background-color: $colorPrincipal;
 
+	  .header__contenedor {
+		display: flex;
+		justify-content: space-around;
+	}
     .logoimg {
         width: 50px;
         height: 50px;
@@ -390,11 +263,49 @@ color: $colorTerciario;}
     }
 	/* Sector Productos*/
 
+	.productosgrilla { 
+		display: grid;
+		grid-template-areas: "main main main"
+							  "main main main"
+							  "main main main";
+	}
 	.productos {
 		display: flex;
 		position: relative;
 		justify-content: space-around;
 	}
+	
+#n-nuevo::before{
+	content: 'Nuevo';
+	background-color: $colorPrincipal;
+	color: $colorTerciario;
+	position: absolute;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#rebaja::before{
+	content: '30% Off';
+	background-color: $colorPrincipal;
+	color: $colorTerciario;
+	position: absolute;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productos--div{
+	width: 360px;
+	height: 438px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+
+.productos--div:hover{
+	transform: translate(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 	.imgprod {
 		position: relative;
 		height:260px ;
@@ -431,6 +342,18 @@ color: $colorTerciario;}
         display: flex;
         justify-content: center;
     }
+	div a  {
+		text-decoration:none ;
+		color: black;
+		outline-width: 5px;
+		list-style: none;
+	}
+	div a:hover {
+		text-decoration:overline ;
+		color: grey;
+		outline-width: 5px;
+		list-style: none;
+	}
 	
 	/*Sector ubicacion*/
 
@@ -480,11 +403,19 @@ section{
 		color: $colorTerciario;
 		text-align: center;
 		}
+		div p {
+			color: grey;
+			font-size: 20px;
+			font-family: 'Roboto Mono', monospace;
+			text-align: center;
+			margin-bottom: 60px;
+			margin-top: 20px;
+			border-bottom: 2px solid grey;
+		}
 		h3{
 			font-family:  'Dela Gothic One', cursive;
 			color: $colorTerciario;
 			text-align: center;
-		
 		}
 
 		.parrafopadre{
@@ -552,6 +483,10 @@ section{
 			transform: translate(-15px);
 			box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 		}
+		.seccion__primera--contacto{
+			display: flex;
+			justify-content: space-around;
+			}
 		.imagenwpp {
 		height: 300px;
 		width: 300px;

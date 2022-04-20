@@ -293,7 +293,7 @@ p b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 350px;
+  width: 490px;
 }
 
 div a {
@@ -598,6 +598,7 @@ h5 {
   width: 100%;
   margin: 20px;
   text-align: center;
+  border-bottom: none;
 }
 
 .imgnos {

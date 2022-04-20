@@ -206,7 +206,7 @@ p b {
 
   header{
       background-color: $colorPrincipal;
-
+    
 	  .header__contenedor {
 		display: flex;
 		justify-content: space-around;
@@ -273,6 +273,7 @@ p b {
 		display: flex;
 		position: relative;
 		justify-content: space-around;
+		align-items: center;
 	}
 	
 #n-nuevo::before{
@@ -381,10 +382,6 @@ p b {
 		background-color: $colorPrincipal
 	}
 	
-	.mainlocales {
-		background-image: url(img/imagenmaps.jpg);
-	}
-	
 	.imglocales{
 		margin-top: 40px;
 	}
@@ -426,9 +423,11 @@ section{
 		.parrafo__nosotros{
 			padding-right: 50px;
 			padding-left: 50px;
+			padding-bottom: 50px;
 			width:100%;
 			margin: 20px;
 			text-align: center;
+			border-bottom: none;
 		}
     
 		/*Sector Kids*/
@@ -513,7 +512,6 @@ aside{
 
     .imgaside {
         display: flex;
-        width: 350px;
     }
   }
 

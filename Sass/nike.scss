@@ -526,3 +526,58 @@ footer{
 	justify-content: space-around;
     }
   }
+
+
+  /* maps*/
+
+  $red-social: (
+	  tw: lightblue
+	  fb: blue
+	  mail:white
+	  in:darkblue
+	  wpp:green
+	  ig:violet
+  );
+
+  @each $nombre, $valor in $red-social {
+	  .icon__red-#{$nombre}{
+		  color: $valor;
+	  }
+  }
+
+  $colores:(
+	  color1:white
+	  color2:grey
+	  color3:black
+  );
+  .navbar-nav{
+	  background-color: map-get($map: $colores, $key: color2 );
+  }
+
+  /* extend*/
+
+  .logoimg{
+	  width: 50px;
+	  height: 50px;
+};
+
+.logoubicacion{
+	@extend .logoimg
+};
+
+/* mixins*/
+
+@mixin btn {
+	display: block;
+	padding: 10px;
+	border: 5px solid grey
+}
+
+.btn-secondary{
+	@include btn;
+	background-color: grey;
+}
+
+
+
+

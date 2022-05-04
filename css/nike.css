@@ -220,6 +220,16 @@ footer ul {
       justify-content: space-around;
 }
 
+li a{
+  list-style: none;
+  color: black;
+}
+
+li a:hover{
+  list-style: none;
+  color: gray;
+}
+
 
 /* productos*/
 
